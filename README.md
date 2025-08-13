@@ -24,6 +24,7 @@ Tecnologias - Detalhamento das habilidades técnicas
 
 Formulário de Contato - Integração para novos projetos
 
+## 📽 Demonstração
 <p align="center">
   <img src="video/kittyweb.gif" alt="Demonstração do KittyWeb" width="700"/>
 </p>
