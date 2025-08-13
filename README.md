@@ -3,7 +3,7 @@ Portfólio Gabriel Theodoro
 
 📌 Visão Geral
 ---------
-Portfólio profissional de Gabriel Theodoro Francisco, desenvolvedor web especializado em criação de sites personalizados. O projeto apresenta habilidades, tecnologias dominadas, trabalhos realizados e formas de contato.
+Portfólio profissional, desenvolvedor web especializado em criação de sites personalizados. O projeto apresenta habilidades, tecnologias dominadas, trabalhos realizados e formas de contato.
 
 🛠 Tecnologias Utilizadas
 ------
