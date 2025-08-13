@@ -3,7 +3,7 @@ Portfólio Gabriel Theodoro
 
 📌 Visão Geral
 Portfólio profissional de Gabriel Theodoro Francisco, desenvolvedor web especializado em criação de sites personalizados. O projeto apresenta habilidades, tecnologias dominadas, trabalhos realizados e formas de contato.
-
+-------
 🛠 Tecnologias Utilizadas
 Front-end: HTML5, CSS3, JavaScript
 
@@ -12,7 +12,7 @@ Back-end: Python (Flask), PHP
 Banco de Dados: SQLite, MySQL, Firebase
 
 Ferramentas: Git, APIs, Responsive Design
-
+------
 ✨ Recursos Principais
 Design Responsivo - Adaptável a todos os dispositivos
 
@@ -23,7 +23,7 @@ Tecnologias - Detalhamento das habilidades técnicas
 Formulário de Contato - Integração para novos projetos
 
 Sistema Admin - Painel para gerenciamento de mensagens
-
+------
 🎥 Demonstração em Vídeo
 [Inclua aqui um vídeo demonstrativo do portfólio em funcionamento. Mostre:]
 
@@ -44,8 +44,6 @@ Controles de reprodução
 Design dos cards
 
 Funcionalidades:
-
-Formulário de contato
 
 Efeitos hover interativos
 
