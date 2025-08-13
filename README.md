@@ -54,6 +54,7 @@ Responsividade em diferentes telas
 Dica: Grave uma tela mostrando o site em desktop e mobile, com zoom nas interações principais.
 
 📦 Estrutura de Arquivos
+--------
 text
 portfolio/
 ├── index.html          # Página principal
