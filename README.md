@@ -24,35 +24,27 @@ Tecnologias - Detalhamento das habilidades técnicas
 
 Formulário de Contato - Integração para novos projetos
 
-Sistema Admin - Painel para gerenciamento de mensagens
-------
-🎥 Demonstração em Vídeo
-[Inclua aqui um vídeo demonstrativo do portfólio em funcionamento. Mostre:]
+<p align="center">
+  <img src="video/kittyweb.gif" alt="Demonstração do KittyWeb" width="700"/>
+</p>
 
-Navegação:
 
-Menu responsivo
+<p align="center">
+  <video src="video/kittyweb.mp4" autoplay muted playsinline width="100%">
+    Seu navegador não suporta a tag de vídeo HTML5.
+  </video>
+</p>
 
-Scroll suave entre seções
 
-Efeitos visuais
+---
 
-Seção de Trabalhos:
+## 🔗 Link da Aplicação
 
-Player de vídeos dos projetos
+Acesse o site online agora mesmo:
 
-Controles de reprodução
+👉 [https://projeto-chat-kittyweb.onrender.com](https://projeto-chat-kittyweb.onrender.com)
 
-Design dos cards
-
-Funcionalidades:
-
-Efeitos hover interativos
-
-Responsividade em diferentes telas
-
-Dica: Grave uma tela mostrando o site em desktop e mobile, com zoom nas interações principais.
-
+---
 📦 Estrutura de Arquivos
 --------
 text
