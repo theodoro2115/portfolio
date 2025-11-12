@@ -129,5 +129,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// ===== Toggle da seção de Certificados =====
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('toggleCertificates');
+  const wrapper = document.getElementById('certificatesWrapper');
+
+  if (toggleBtn && wrapper) {
+    toggleBtn.addEventListener('click', function() {
+      const isOpen = wrapper.classList.toggle('open');
+
+      // Controle de aria para acessibilidade
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      // Se quiser garantir que o scroll acompanhe ao abrir, descomente a linha abaixo:
+      // if (isOpen) wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+});
+
+
 // Verificação inicial
 console.log('Sistema de mensagens carregado!');
