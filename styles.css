@@ -980,10 +980,34 @@ body {
   border: 1px solid #eee;
 }
 
+.certificate-item1 {
+  display: block; /* Para que o link ocupe todo o card */
+  text-decoration: none;
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
 .certificate-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-color: #667eea;
+}
+
+.certificate-item1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.certificate-item1 i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #FFD700; /* Cor de destaque */
 }
 
 .certificate-item i {
@@ -999,11 +1023,22 @@ body {
   font-weight: 600;
 }
 
+.certificate-item1 h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
 .certificate-item p {
   color: #666;
   font-size: 0.9rem;
 }
 
+.certificate-item1 p {
+  color: #666;
+  font-size: 0.9rem;
+}
 /* ===== Certificates collapsible styles (melhorado) ===== */
 
 .certificates-header {
