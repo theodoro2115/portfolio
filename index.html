@@ -230,13 +230,23 @@
 
 
 	<!-- Certificates Section -->
-	    <section id="certificates" class="certificates">
-	        <div class="container">
-	            <div class="section-header">
-	                <h2 class="section-title">Meus Certificados</h2>
-	                <p class="section-subtitle">Conhecimento e aprimoramento contínuo nas mais diversas áreas da tecnologia e gestão.</p>
-	            </div>
-	            <div class="certificates-grid"> 
+	   <section id="certificates" class="certificates">
+            <div class="container">
+                <div class="section-header">
+                <h2 class="section-title">Meus Certificados</h2>
+                <p class="section-subtitle">Conhecimento e aprimoramento contínuo nas mais diversas áreas da tecnologia e gestão.</p>
+                </div>
+
+                <!-- Cabeçalho com botão que controla o colapso -->
+                <div class="certificates-header">
+                <p class="certificates-summary">Clique na seta para mostrar/ocultar os certificados</p>
+                <button id="toggleCertificates" class="cert-toggle" aria-expanded="false" aria-controls="certificatesGrid">
+                    <span class="sr-only">Mostrar/ocultar certificados</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                </div>
+	             <div id="certificatesWrapper" class="certificates-wrapper">
+                    <div id="certificatesGrid" class="certificates-grid"> 
                     <a href="Certificados/Python_Essentials_1_certificate_theodorogabriel53-gmail-com_7980fd93-ffb9-4e10-b117-0efff50d6331.pdf" target="_blank" class="certificate-item">
 	                    <i class="fas fa-certificate"></i>
 	                    <h4>Python Essentials 1 (Cisco Networking Academy)</h4>
