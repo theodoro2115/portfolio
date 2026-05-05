@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     closeModal?.addEventListener('click', () => {
         adminModal.style.display = 'none';
     });
-/ Login
+
     loginBtn?.addEventListener('click', () => {
         if (adminPassword.value === CONFIG.ADMIN_PASSWORD) {
             loginSection.style.display = 'none';
