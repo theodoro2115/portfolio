@@ -14,7 +14,10 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -1148,4 +1151,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
