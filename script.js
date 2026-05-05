@@ -1,12 +1,11 @@
-// Sistema de Mensagens Admin - Versão 2.0 (Corrigida)
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Configurações
     const CONFIG = {
-        ADMIN_PASSWORD: "gabriel123", // Troque por sua senha
-        BACKUP_INTERVAL: 5 // Número de mensagens para backup automático
+        ADMIN_PASSWORD: "gabriel123", 
+        BACKUP_INTERVAL: 5 
     };
 
-    // Elementos do DOM
+  
     const adminModal = document.getElementById('adminModal');
     const adminAccessBtn = document.getElementById('adminAccessBtn');
     const closeModal = document.querySelector('.close-modal');
@@ -19,22 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const messagesList = document.getElementById('messagesList');
     const form = document.querySelector('.form');
 
-    // ==================== FUNÇÕES PRINCIPAIS ====================
 
-    // ==================== EVENT LISTENERS ====================
-
-    // Acesso ao Painel Admin
+   
     adminAccessBtn?.addEventListener('click', () => {
         adminModal.style.display = 'block';
         adminPassword.focus();
     });
 
-    // Fechar Modal
+  
     closeModal?.addEventListener('click', () => {
         adminModal.style.display = 'none';
     });
-
-    // Login
+/ Login
     loginBtn?.addEventListener('click', () => {
         if (adminPassword.value === CONFIG.ADMIN_PASSWORD) {
             loginSection.style.display = 'none';
@@ -45,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Logout
+   
     logoutBtn?.addEventListener('click', () => {
         messagesSection.style.display = 'none';
         loginSection.style.display = 'block';
@@ -53,13 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
         adminModal.style.display = 'none';
     });
 
-    // Exportar Mensagens
+   
     exportBtn?.addEventListener('click', () => {
         autoBackup();
         showNotification('Backup exportado com sucesso!', 'success');
     });
 
-    // ==================== FORMULÁRIO DE CONTATO ====================
 
     if (form) {
         form.addEventListener('submit', function(e) {
@@ -67,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
            const data = {
             name: formData.get('name'),
-            phone: formData.get('phone'),  // Alterado de email para phone
+            phone: formData.get('phone'),  
             project: formData.get('project'),
             message: formData.get('message'),
             timestamp: new Date().getTime()
     };
 
-            // Validação
+           
             if (!data.name || !data.phone || !data.message) {
                 showNotification('Preencha todos os campos obrigatórios!', 'error');
                 return;
@@ -85,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             submitBtn.disabled = true;
 
-            // Simulação de envio
+           
             setTimeout(() => {
                 if (saveMessage(data)) {
                     showNotification('Mensagem enviada com sucesso!', 'success');
@@ -99,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ==================== FUNÇÃO DE NOTIFICAÇÃO ====================
+
 
     function showNotification(message, type = 'info') {
         const existingNotification = document.querySelector('.notification');
@@ -129,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// ===== Toggle da seção de Certificados =====
 document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn = document.getElementById('toggleCertificates');
   const wrapper = document.getElementById('certificatesWrapper');
@@ -138,15 +131,12 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleBtn.addEventListener('click', function() {
       const isOpen = wrapper.classList.toggle('open');
 
-      // Controle de aria para acessibilidade
       toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
-      // Se quiser garantir que o scroll acompanhe ao abrir, descomente a linha abaixo:
-      // if (isOpen) wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+   
     });
   }
 });
 
 
-// Verificação inicial
 console.log('Sistema de mensagens carregado!');
